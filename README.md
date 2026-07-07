@@ -212,60 +212,27 @@ The generation pipeline includes JSON repair to recover malformed outputs and sc
 .
 ├── README.md
 ├── LICENSE
-├── requirements.txt
-├── .gitignore
-├── model_weights.txt
-├── data/                 # Dataset placeholders; raw Reddit data is not committed
-├── docs/
-│   ├── repository_notes.md
-│   └── submission/
-│       └── final_report.pdf
-├── notebooks/            # EDA and experiment notebooks
-├── resources/            # Supporting project resources
-├── results/              # Headline metrics, confusion matrices, and result summaries
-├── scripts/              # Training, evaluation, and data-preparation scripts
-└── src/                  # Reusable project modules
+├── dogwhistle-detection
+      ├── requirements.txt
+      ├── .gitignore
+      ├── model_weights.txt
+      ├── data/                 # Dataset placeholders; raw Reddit data is not committed
+      ├── docs/
+      │   ├── repository_notes.md
+      │   └── submission/
+      │       └── final_report.pdf
+      ├── notebooks/            # EDA and experiment notebooks
+      ├── resources/            # Supporting project resources
+      ├── results/              # Headline metrics, confusion matrices, and result summaries
+      ├── scripts/              # Training, evaluation, and data-preparation scripts
+      └── src/                  # Reusable project modules
 ```
-
----
-
-## Suggested Execution Flow
-
-A clean implementation of this project would follow this order:
-
-```text
-1. Prepare the silent_signals Reddit split
-2. Build root-stratified train/validation/test partitions
-3. Mine and adjudicate literal negatives for binary disambiguation
-4. Fine-tune RoBERTa for coded-vs-literal classification
-5. Fine-tune RoBERTa for 17-way ingroup classification
-6. Run the random-split leakage control
-7. Fine-tune Flan-T5-XL with LoRA for structured JSON generation
-8. Repair malformed JSON outputs and evaluate categorical fields
-9. Compare root-stratified results against leaky/random split results
-10. Document limitations, ethical risks, and error patterns
-```
-
----
-
-## Data and Model Artifact Notes
-
-Large datasets, raw Reddit comments, credentials, local cluster paths, and model checkpoints should not be committed directly to GitHub. The repository is organized so that code, documentation, metrics, and final submitted materials can be shared while keeping restricted or oversized artifacts outside version control.
-
-Use `.gitignore` to exclude:
-
-- Raw or processed private datasets
-- Model checkpoints and adapter weights
-- Local cache directories
-- Experiment logs with raw text
-- Environment files containing credentials
 
 ---
 
 ## Related Project Links
 
-- Team repository: https://github.com/ceciliaalocicero/dogwhistle-detection
-- Additional related implementation: https://github.com/calerio/dog-whistle-detection
+- Team repository: [https://github.com/ceciliaalocicero/dogwhistle-detection](https://github.com/calerio/dog-whistle-detection)
 - Dataset paper: Kruk et al. (2024), *Silent Signals, Loud Impact: LLMs for Word-Sense Disambiguation of Coded Dog Whistles*
 
 ---
