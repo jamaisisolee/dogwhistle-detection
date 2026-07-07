@@ -14,7 +14,7 @@ The project addresses three linked tasks:
 
 The initial report and project documentation created by the team are available in the original repository here [`calerio/dog-whistle-detection`](https://github.com/calerio/dog-whistle-detection/tree/main/docs) documentation.
 
-The full submitted report is included in [`docs/submission/final_report.pdf`](docs/submission/final_report.pdf).
+The full submitted report is included in [`dogwhistle-detection/docs/submission/final_report.pdf`](dogwhistle-detection/docs/submission/final_report.pdf).
 
 ---
 
