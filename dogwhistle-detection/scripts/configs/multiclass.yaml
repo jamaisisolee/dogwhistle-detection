@@ -1,0 +1,35 @@
+task: multiclass
+# Mirror RQ-A: switched from microsoft/deberta-v3-large to roberta-base
+# on 2026-04-29 after the v3-large NaN saga (see binary.yaml header
+# comment + docs/sessions/2026-04-29_rqa_nan_postmortem.md).
+model_name: FacebookAI/roberta-base
+max_length: 512
+# Two arms (input variants):
+#   "term"      -> Text + matched dog-whistle term
+#   "text_only" -> Text only (ablation: can the model recover ingroup
+#                  from context without seeing the surface form?)
+# Override per run via the --input_format CLI flag.
+input_format: term
+epochs: 5
+batch_size: 32
+grad_accum: 1
+# 2e-5 is canonical for RoBERTa-base fine-tuning.
+lr: 2e-5
+weight_decay: 0.01
+warmup_ratio: 0.1
+max_grad_norm: 1.0
+sample_size: 0
+seed: 42
+data_dir: ./data
+output_dir: ./results/multiclass
+split_dir: ./data/splits
+# bf16 on A100 is the standard memory/speed lever and matches what we
+# use in RQ-C (see scripts/configs/generation.yaml). Was false during
+# the DeBERTa-v3-large troubleshooting; that constraint goes away.
+bf16: true
+gradient_checkpointing: false
+early_stopping_patience: 2
+logging_steps: 50
+save_total_limit: 2
+num_workers: 4
+report_to: none

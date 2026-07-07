@@ -1,0 +1,58 @@
+task: binary
+# Switched from microsoft/deberta-v3-large after 5 failed attempts on
+# 2026-04-29 (jobs 484468, 484986, 484991, 485002, 485040 — see
+# docs/sessions/2026-04-29_rqa_nan_postmortem.md). DeBERTa-v3-large was
+# numerically fragile across every fp32/fp16/lr/clip/init combination
+# we tried; the head couldn't escape the predict-all-1 collapse without
+# the backbone diverging into NaN. RoBERTa-base is the standard reliable
+# choice for binary text classification on ~10k examples and trains in
+# ~30 min on the MIG slice (vs DeBERTa's 6+ h).
+model_name: FacebookAI/roberta-base
+max_length: 512
+# Two arms compared at the same seeds (see DESIGN_DEFENSE.md D6):
+#   "term"              -> Candidate term + Text
+#   "term_enriched_def" -> Candidate term + Candidate meaning (enriched glossary) + Text
+# Override per run via the --input_format CLI flag.
+input_format: term_enriched_def
+epochs: 5
+batch_size: 32
+grad_accum: 1
+# 2e-5 is the canonical fine-tuning LR for RoBERTa-base; well within its
+# stable regime. (We had dropped to 1e-5 to try to tame DeBERTa-v3-large
+# instability — that constraint goes away with the model swap.)
+lr: 2e-5
+weight_decay: 0.01
+warmup_ratio: 0.1
+# HF Trainer default. Was tightened to 0.5 in a first patch attempt
+# (2026-04-29 job 484986), but at lr=1e-5 the actual grad_norms during
+# warmup are 5–15, so a 0.5 clip cut the effective LR by ~20× and the
+# model collapsed to chance. The lr drop alone is sufficient to prevent
+# NaN; we don't need the tighter clip on top.
+max_grad_norm: 1.0
+sample_size: 0
+seed: 42
+data_dir: ./data
+output_dir: ./results/binary
+split_dir: ./data/splits
+bf16: false
+# fp16=True was tried in job 485002 but transformers 5.x has a known
+# incompatibility ("Attempting to unscale FP16 gradients."). We keep
+# fp32 and address the bad-init root cause directly via a manual
+# classifier+pooler re-init in the train script (see train_binary_disambiguator.py).
+fp16: false
+# Soft targets bound the per-example CE loss; prevents extreme logits
+# from producing 10×-magnitude gradients on the first batches.
+label_smoothing_factor: 0.1
+# Manually re-initialise the newly-added pooler+classifier with std=0.02
+# Gaussian weights (BERT-standard). DebertaV2's default head init can
+# produce |logit| > 10 at step 0, which is what was driving NaN in
+# jobs 484468 and 484991. See docs/sessions/2026-04-29.
+init_head_std: 0.02
+gradient_checkpointing: false
+early_stopping_patience: 2
+# 50 (was 200) so an early divergence shows up in the log before the
+# first epoch eval rather than being inferred from a single 200-step row.
+logging_steps: 50
+save_total_limit: 2
+num_workers: 4
+report_to: none

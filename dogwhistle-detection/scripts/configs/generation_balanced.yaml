@@ -1,0 +1,32 @@
+task: generation
+model_name: google/flan-t5-xl
+max_input_len: 512
+max_target_len: 128
+epochs: 5
+batch_size: 4
+grad_accum: 4
+lr: 3e-4
+weight_decay: 0.01
+warmup_ratio: 0.1
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.1
+lora_target_modules:
+  - q
+  - v
+sample_size: 0
+seed: 42
+data_dir: ./data
+output_dir: ./results/generation_balanced
+split_dir: ./data/splits
+bf16: auto
+gradient_checkpointing: true
+early_stopping_patience: 2
+logging_steps: 200
+save_total_limit: 2
+num_workers: 4
+report_to: none
+# Path B: oversample/undersample each ingroup to ~1500 rows in TRAIN only.
+# Pulls anti-liberal from 525 (5.8%) up toward a flat distribution across the 17
+# train ingroups. val/test stay untouched. Increases train rows ~9k -> ~25.5k.
+class_balance_train: 1500
