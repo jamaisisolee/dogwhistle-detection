@@ -12,6 +12,8 @@ The project addresses three linked tasks:
 2. **Ingroup classification** - classify the ideological ingroup associated with a coded expression.
 3. **Structured explanation generation** - generate a JSON-style explanation containing the dog-whistle root, ingroup, definition, and rationale.
 
+The initial report and project documentation by calerio are available in the original [`calerio/dog-whistle-detection`](https://github.com/calerio/dog-whistle-detection/tree/main/docs) documentation.
+
 The full submitted report is included in [`docs/submission/final_report.pdf`](docs/submission/final_report.pdf).
 
 ---
