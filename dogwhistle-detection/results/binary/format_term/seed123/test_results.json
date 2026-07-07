@@ -1,0 +1,80 @@
+{
+  "test_split_n": 2768.0,
+  "test_split_accuracy": 0.7994942196531792,
+  "test_split_precision": 0.795017793594306,
+  "test_split_recall": 0.8070809248554913,
+  "test_split_f1": 0.8010039440659734,
+  "test_split_pr_auc": 0.881661765951667,
+  "detection_101_n": 101.0,
+  "detection_101_accuracy": 0.7425742574257426,
+  "detection_101_precision": 0.8205128205128205,
+  "detection_101_recall": 0.6274509803921569,
+  "detection_101_f1": 0.7111111111111111,
+  "detection_101_pr_auc": 0.8304874934693997,
+  "disambiguation_124_n": 124.0,
+  "disambiguation_124_accuracy": 0.6854838709677419,
+  "disambiguation_124_precision": 0.7413793103448276,
+  "disambiguation_124_recall": 0.6417910447761194,
+  "disambiguation_124_f1": 0.688,
+  "disambiguation_124_pr_auc": 0.7937411127862126,
+  "_full": {
+    "test_split": {
+      "dataset": "test_split",
+      "n": 2768,
+      "accuracy": 0.7994942196531792,
+      "precision": 0.795017793594306,
+      "recall": 0.8070809248554913,
+      "f1": 0.8010039440659734,
+      "pr_auc": 0.881661765951667,
+      "confusion_matrix": [
+        [
+          1096,
+          288
+        ],
+        [
+          267,
+          1117
+        ]
+      ]
+    },
+    "detection_101": {
+      "dataset": "detection_101",
+      "n": 101,
+      "accuracy": 0.7425742574257426,
+      "precision": 0.8205128205128205,
+      "recall": 0.6274509803921569,
+      "f1": 0.7111111111111111,
+      "pr_auc": 0.8304874934693997,
+      "confusion_matrix": [
+        [
+          43,
+          7
+        ],
+        [
+          19,
+          32
+        ]
+      ]
+    },
+    "disambiguation_124": {
+      "dataset": "disambiguation_124",
+      "n": 124,
+      "accuracy": 0.6854838709677419,
+      "precision": 0.7413793103448276,
+      "recall": 0.6417910447761194,
+      "f1": 0.688,
+      "pr_auc": 0.7937411127862126,
+      "confusion_matrix": [
+        [
+          42,
+          15
+        ],
+        [
+          24,
+          43
+        ]
+      ]
+    }
+  },
+  "_input_format": "term"
+}
