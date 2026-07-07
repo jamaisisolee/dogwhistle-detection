@@ -1,0 +1,80 @@
+{
+  "test_split_n": 2768.0,
+  "test_split_accuracy": 0.7901011560693642,
+  "test_split_precision": 0.7722033898305085,
+  "test_split_recall": 0.8229768786127167,
+  "test_split_f1": 0.7967820916404337,
+  "test_split_pr_auc": 0.8797573661397584,
+  "detection_101_n": 101.0,
+  "detection_101_accuracy": 0.7128712871287128,
+  "detection_101_precision": 0.7894736842105263,
+  "detection_101_recall": 0.5882352941176471,
+  "detection_101_f1": 0.6741573033707865,
+  "detection_101_pr_auc": 0.7874992623576805,
+  "disambiguation_124_n": 124.0,
+  "disambiguation_124_accuracy": 0.7096774193548387,
+  "disambiguation_124_precision": 0.7719298245614035,
+  "disambiguation_124_recall": 0.6567164179104478,
+  "disambiguation_124_f1": 0.7096774193548387,
+  "disambiguation_124_pr_auc": 0.8159952818581602,
+  "_full": {
+    "test_split": {
+      "dataset": "test_split",
+      "n": 2768,
+      "accuracy": 0.7901011560693642,
+      "precision": 0.7722033898305085,
+      "recall": 0.8229768786127167,
+      "f1": 0.7967820916404337,
+      "pr_auc": 0.8797573661397584,
+      "confusion_matrix": [
+        [
+          1048,
+          336
+        ],
+        [
+          245,
+          1139
+        ]
+      ]
+    },
+    "detection_101": {
+      "dataset": "detection_101",
+      "n": 101,
+      "accuracy": 0.7128712871287128,
+      "precision": 0.7894736842105263,
+      "recall": 0.5882352941176471,
+      "f1": 0.6741573033707865,
+      "pr_auc": 0.7874992623576805,
+      "confusion_matrix": [
+        [
+          42,
+          8
+        ],
+        [
+          21,
+          30
+        ]
+      ]
+    },
+    "disambiguation_124": {
+      "dataset": "disambiguation_124",
+      "n": 124,
+      "accuracy": 0.7096774193548387,
+      "precision": 0.7719298245614035,
+      "recall": 0.6567164179104478,
+      "f1": 0.7096774193548387,
+      "pr_auc": 0.8159952818581602,
+      "confusion_matrix": [
+        [
+          44,
+          13
+        ],
+        [
+          23,
+          44
+        ]
+      ]
+    }
+  },
+  "_input_format": "term"
+}
