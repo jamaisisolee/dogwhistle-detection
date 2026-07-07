@@ -1,0 +1,9 @@
+{
+  "label": "template_fill_in",
+  "n_samples": 125,
+  "json_parse_rate": 1.0,
+  "exact_match_dog_whistle_root": 0.0,
+  "exact_match_ingroup": 0.168,
+  "exact_match_definition": 0.0,
+  "rouge_l_mean": 0.7082758965850499
+}

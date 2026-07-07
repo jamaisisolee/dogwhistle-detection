@@ -1,0 +1,29 @@
+{
+  "fine_tuned_model": {
+    "json_parse_rate": 0.0,
+    "exact_match_dog_whistle_root": 0.0,
+    "exact_match_ingroup": 0.0,
+    "exact_match_definition": 0.0,
+    "rouge_l_mean": 0.34362887927617464
+  },
+  "template_fill_in": {
+    "label": "template_fill_in",
+    "n_samples": 125,
+    "json_parse_rate": 1.0,
+    "exact_match_dog_whistle_root": 0.0,
+    "exact_match_ingroup": 0.168,
+    "exact_match_definition": 0.0,
+    "rouge_l_mean": 0.7082758965850499
+  },
+  "tfidf_retrieval_1nn": {
+    "label": "tfidf_retrieval_1nn",
+    "n_samples": 125,
+    "json_parse_rate": 1.0,
+    "exact_match_dog_whistle_root": 0.0,
+    "exact_match_ingroup": 0.32,
+    "exact_match_definition": 0.032,
+    "rouge_l_mean": 0.6271988174563328
+  },
+  "delta_ingroup_em_vs_template": -0.168,
+  "delta_ingroup_em_vs_retrieval": -0.32
+}
