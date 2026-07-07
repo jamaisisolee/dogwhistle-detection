@@ -1,10 +1,10 @@
 # Hidden in Plain Sight: Dog Whistle Detection, Classification, and Explanation
 
-> Project Summary
+> ## Project Summary
 
 > Developed an end-to-end NLP pipeline for detecting coded dog-whistle language on Reddit, classifying ideological ingroups, and generating structured explanations. Fine-tuned RoBERTa for binary and multiclass classification and Flan-T5-XL + LoRA for structured explanation generation. The project's central finding demonstrates that apparent near-perfect performance on ingroup classification is largely explained by evaluation leakage, with macro-F1 dropping from 0.996 to 0.353 when dog-whistle roots are properly held out during testing.
 
-> This project was developed for the Natural Language Processing course at Universita Bocconi. It studies how transformer-based NLP systems handle politically and ideologically coded language: phrases that appear innocuous in surface form but communicate a hidden meaning to an intended audience.
+This project was developed for the Natural Language Processing course at Universita Bocconi. It studies how transformer-based NLP systems handle politically and ideologically coded language: phrases that appear innocuous in surface form but communicate a hidden meaning to an intended audience.
 
 The project addresses three linked tasks:
 
