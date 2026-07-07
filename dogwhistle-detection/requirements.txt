@@ -1,0 +1,14 @@
+# Minimal environment for adding reproducible notebooks/scripts.
+# Pin exact versions once you recover the final submitted code.
+
+numpy
+pandas
+scikit-learn
+torch
+transformers
+datasets
+accelerate
+peft
+evaluate
+matplotlib
+jupyter

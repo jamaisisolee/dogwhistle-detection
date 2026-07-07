@@ -1,0 +1,17 @@
+Model weights are not included in this repository.
+
+Models used in the project:
+
+1. FacebookAI/roberta-base
+   - Binary dog-whistle disambiguation
+   - 17-way ingroup classification
+
+2. google/flan-t5-xl
+   - Structured explanation generation
+   - Fine-tuned with LoRA adapters
+
+Recommended handling:
+
+- Keep checkpoints, adapters, and experiment caches outside GitHub.
+- Upload large model artifacts only to an appropriate model registry or storage bucket if licensing and course/project rules allow it.
+- Document model names, hyperparameters, and evaluation results in the repository so the experiments remain understandable without committing large binary files.
