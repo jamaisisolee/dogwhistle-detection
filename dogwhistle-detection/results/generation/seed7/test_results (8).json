@@ -1,2 +1,544 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+{
+  "n_samples": 2095,
+  "json_parse_rate": 0.9971360381861575,
+  "dog_whistle_root": {
+    "accuracy": 0.30214797136038185,
+    "macro_f1": 0.16994503299196168,
+    "weighted_f1": 0.36734030536845147,
+    "per_class": {
+      "41%": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "affirmative action": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 39
+      },
+      "all lives matter": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 18
+      },
+      "biological realism": {
+        "precision": 1.0,
+        "recall": 0.1875,
+        "f1": 0.3157894736842105,
+        "support": 32
+      },
+      "blueish": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "boogaloo": {
+        "precision": 1.0,
+        "recall": 0.7272727272727273,
+        "f1": 0.8421052631578947,
+        "support": 66
+      },
+      "bop": {
+        "precision": 1.0,
+        "recall": 0.5454545454545454,
+        "f1": 0.7058823529411765,
+        "support": 11
+      },
+      "brave and stunning": {
+        "precision": 1.0,
+        "recall": 0.35384615384615387,
+        "f1": 0.5227272727272727,
+        "support": 65
+      },
+      "cherry emoji": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "coin": {
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.7692307692307693,
+        "support": 8
+      },
+      "coincidence": {
+        "precision": 1.0,
+        "recall": 0.28888888888888886,
+        "f1": 0.4482758620689655,
+        "support": 45
+      },
+      "controlled media": {
+        "precision": 1.0,
+        "recall": 0.52,
+        "f1": 0.6842105263157895,
+        "support": 25
+      },
+      "cultural enrichment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 43
+      },
+      "early life": {
+        "precision": 1.0,
+        "recall": 0.7333333333333333,
+        "f1": 0.8461538461538461,
+        "support": 15
+      },
+      "election integrity": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 28
+      },
+      "frog emoji": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 28
+      },
+      "gender socialization": {
+        "precision": 1.0,
+        "recall": 0.04225352112676056,
+        "f1": 0.08108108108108109,
+        "support": 71
+      },
+      "ghetto": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 56
+      },
+      "hollywood elite": {
+        "precision": 1.0,
+        "recall": 0.05128205128205128,
+        "f1": 0.0975609756097561,
+        "support": 78
+      },
+      "holocauster": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 3
+      },
+      "islamic extremists": {
+        "precision": 1.0,
+        "recall": 0.26666666666666666,
+        "f1": 0.42105263157894735,
+        "support": 45
+      },
+      "judeo-christian": {
+        "precision": 1.0,
+        "recall": 0.9655172413793104,
+        "f1": 0.9824561403508771,
+        "support": 29
+      },
+      "khazars": {
+        "precision": 1.0,
+        "recall": 0.4411764705882353,
+        "f1": 0.6122448979591837,
+        "support": 34
+      },
+      "lesbian erasure": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 43
+      },
+      "lizard emoji": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      },
+      "maga": {
+        "precision": 1.0,
+        "recall": 0.8045977011494253,
+        "f1": 0.89171974522293,
+        "support": 87
+      },
+      "new york intellectuals": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      },
+      "overpopulation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 11
+      },
+      "power level": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20
+      },
+      "preemptive strike": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "puppet masters": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 72
+      },
+      "references to cities with large racial minority populations being overrun by crime, drugs, rodents": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 91
+      },
+      "social justice warrior": {
+        "precision": 1.0,
+        "recall": 0.07361111111111111,
+        "f1": 0.1371280724450194,
+        "support": 720
+      },
+      "strapping young buck": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 23
+      },
+      "take back": {
+        "precision": 1.0,
+        "recall": 0.36363636363636365,
+        "f1": 0.5333333333333333,
+        "support": 55
+      },
+      "thug": {
+        "precision": 1.0,
+        "recall": 0.37735849056603776,
+        "f1": 0.547945205479452,
+        "support": 53
+      },
+      "uterus-haver": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "vinland": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "willie horton": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "working class": {
+        "precision": 1.0,
+        "recall": 0.9139784946236559,
+        "f1": 0.9550561797752809,
+        "support": 93
+      }
+    }
+  },
+  "ingroup": {
+    "accuracy": 0.516945107398568,
+    "macro_f1": 0.39332403705353364,
+    "weighted_f1": 0.46780530107563967,
+    "per_class": {
+      "anti-liberal": {
+        "precision": 1.0,
+        "recall": 0.044444444444444446,
+        "f1": 0.0851063829787234,
+        "support": 720
+      },
+      "antisemitic": {
+        "precision": 0.20355029585798817,
+        "recall": 0.5771812080536913,
+        "f1": 0.3009623797025372,
+        "support": 298
+      },
+      "conservative": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "islamophobic": {
+        "precision": 0.967741935483871,
+        "recall": 0.7692307692307693,
+        "f1": 0.8571428571428571,
+        "support": 117
+      },
+      "racist": {
+        "precision": 0.6612111292962357,
+        "recall": 0.957345971563981,
+        "f1": 0.782187802516941,
+        "support": 422
+      },
+      "transphobic": {
+        "precision": 1.0,
+        "recall": 0.765625,
+        "f1": 0.8672566371681416,
+        "support": 256
+      },
+      "white supremacist": {
+        "precision": 0.6077170418006431,
+        "recall": 0.6923076923076923,
+        "f1": 0.6472602739726028,
+        "support": 273
+      }
+    }
+  },
+  "definition": {
+    "accuracy": 0.03914081145584725,
+    "macro_f1": 0.01424010529362433,
+    "weighted_f1": 0.04540084133305775,
+    "per_class": {
+      "black lives don't matter": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "support": 18
+      },
+      "black men are criminals or violent": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 53
+      },
+      "convicted murderer whose imagery is used to link blackness with criminality and threat": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      },
+      "either trans women are not women because they don't have a uterus, or that trans people are trying to reduce cis women to reproductive organs": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "give white americans back full social and political control over the country": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 55
+      },
+      "how deeply someone has fallen into fascist ideology": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 20
+      },
+      "jewish": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 21
+      },
+      "jewish conspiracy": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 45
+      },
+      "jewish people": {
+        "precision": 0.5416666666666666,
+        "recall": 0.3333333333333333,
+        "f1": 0.4126984126984127,
+        "support": 39
+      },
+      "jewish people control the media": {
+        "precision": 1.0,
+        "recall": 0.04,
+        "f1": 0.07692307692307693,
+        "support": 25
+      },
+      "jewish people control the world": {
+        "precision": 0.5,
+        "recall": 0.09722222222222222,
+        "f1": 0.16279069767441862,
+        "support": 72
+      },
+      "jewish people who control the media": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 78
+      },
+      "jewish person": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "kill or attack, particularly political opponents": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "liberals": {
+        "precision": 0.4,
+        "recall": 0.005555555555555556,
+        "f1": 0.010958904109589041,
+        "support": 720
+      },
+      "low-income black neighborhood": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 56
+      },
+      "make america white again": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 87
+      },
+      "minorities are dirty and criminals": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 91
+      },
+      "muslim people as a whole are a threat": {
+        "precision": 0.9183673469387755,
+        "recall": 1.0,
+        "f1": 0.9574468085106383,
+        "support": 45
+      },
+      "muslims create problems in society": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 43
+      },
+      "muslims threaten christian society": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 29
+      },
+      "race war": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 66
+      },
+      "self-referential signal for detransitioners that are now anti-trans": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      },
+      "the person being talked about is jewish": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 15
+      },
+      "there are too many non-white people in the world": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "trans men will always be women, and trans women will always be men": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 71
+      },
+      "trans people are liars who appropriate intersex people's struggles": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "trans people are threatening cis lesbians": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 43
+      },
+      "trans people aren't real": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 32
+      },
+      "trans women are showered with undue praise just for existing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 65
+      },
+      "transphobic reference to statistic that 41% of trans people have attempted suicide, often used to imply trans people should kill themselves": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 11
+      },
+      "transphobic signal representing joanna cherry, an anti-trans activist and scottish politician": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "unprovoked attack": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 9
+      },
+      "voter suppression that targets people of color": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 28
+      },
+      "white people are victims of racial mistreatment": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 39
+      },
+      "white supremacist signal referencing short-lived viking settlement in north america": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 6
+      },
+      "white supremacist signal, representing pepe the frog": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 28
+      },
+      "white working class": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 93
+      },
+      "young black man": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 23
+      }
+    }
+  },
+  "explanation_cosine_mean": 0.5050265264178191,
+  "explanation_cosine_median": 0.454978658398999,
+  "explanation_rouge_l_mean": 0.7756973337343789
+}
