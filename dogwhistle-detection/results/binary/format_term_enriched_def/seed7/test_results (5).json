@@ -1,2 +1,80 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+{
+  "test_split_n": 2768.0,
+  "test_split_accuracy": 0.6907514450867052,
+  "test_split_precision": 0.632,
+  "test_split_recall": 0.9132947976878613,
+  "test_split_f1": 0.7470449172576832,
+  "test_split_pr_auc": 0.8365560364140321,
+  "detection_101_n": 101.0,
+  "detection_101_accuracy": 0.7920792079207921,
+  "detection_101_precision": 0.75,
+  "detection_101_recall": 0.8823529411764706,
+  "detection_101_f1": 0.8108108108108109,
+  "detection_101_pr_auc": 0.7933935851338016,
+  "disambiguation_124_n": 124.0,
+  "disambiguation_124_accuracy": 0.6532258064516129,
+  "disambiguation_124_precision": 0.6304347826086957,
+  "disambiguation_124_recall": 0.8656716417910447,
+  "disambiguation_124_f1": 0.7295597484276729,
+  "disambiguation_124_pr_auc": 0.7922537551638842,
+  "_full": {
+    "test_split": {
+      "dataset": "test_split",
+      "n": 2768,
+      "accuracy": 0.6907514450867052,
+      "precision": 0.632,
+      "recall": 0.9132947976878613,
+      "f1": 0.7470449172576832,
+      "pr_auc": 0.8365560364140321,
+      "confusion_matrix": [
+        [
+          648,
+          736
+        ],
+        [
+          120,
+          1264
+        ]
+      ]
+    },
+    "detection_101": {
+      "dataset": "detection_101",
+      "n": 101,
+      "accuracy": 0.7920792079207921,
+      "precision": 0.75,
+      "recall": 0.8823529411764706,
+      "f1": 0.8108108108108109,
+      "pr_auc": 0.7933935851338016,
+      "confusion_matrix": [
+        [
+          35,
+          15
+        ],
+        [
+          6,
+          45
+        ]
+      ]
+    },
+    "disambiguation_124": {
+      "dataset": "disambiguation_124",
+      "n": 124,
+      "accuracy": 0.6532258064516129,
+      "precision": 0.6304347826086957,
+      "recall": 0.8656716417910447,
+      "f1": 0.7295597484276729,
+      "pr_auc": 0.7922537551638842,
+      "confusion_matrix": [
+        [
+          23,
+          34
+        ],
+        [
+          9,
+          58
+        ]
+      ]
+    }
+  },
+  "_input_format": "term_enriched_def"
+}
