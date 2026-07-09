@@ -1,0 +1,80 @@
+{
+  "test_split_n": 2768.0,
+  "test_split_accuracy": 0.7745664739884393,
+  "test_split_precision": 0.7698863636363636,
+  "test_split_recall": 0.7832369942196532,
+  "test_split_f1": 0.7765042979942693,
+  "test_split_pr_auc": 0.7981375093535394,
+  "detection_101_n": 101.0,
+  "detection_101_accuracy": 0.7326732673267327,
+  "detection_101_precision": 0.8157894736842105,
+  "detection_101_recall": 0.6078431372549019,
+  "detection_101_f1": 0.6966292134831461,
+  "detection_101_pr_auc": 0.7843799241363067,
+  "disambiguation_124_n": 124.0,
+  "disambiguation_124_accuracy": 0.6774193548387096,
+  "disambiguation_124_precision": 0.7368421052631579,
+  "disambiguation_124_recall": 0.6268656716417911,
+  "disambiguation_124_f1": 0.6774193548387096,
+  "disambiguation_124_pr_auc": 0.7774304351532126,
+  "_full": {
+    "test_split": {
+      "dataset": "test_split",
+      "n": 2768,
+      "accuracy": 0.7745664739884393,
+      "precision": 0.7698863636363636,
+      "recall": 0.7832369942196532,
+      "f1": 0.7765042979942693,
+      "pr_auc": 0.7981375093535394,
+      "confusion_matrix": [
+        [
+          1060,
+          324
+        ],
+        [
+          300,
+          1084
+        ]
+      ]
+    },
+    "detection_101": {
+      "dataset": "detection_101",
+      "n": 101,
+      "accuracy": 0.7326732673267327,
+      "precision": 0.8157894736842105,
+      "recall": 0.6078431372549019,
+      "f1": 0.6966292134831461,
+      "pr_auc": 0.7843799241363067,
+      "confusion_matrix": [
+        [
+          43,
+          7
+        ],
+        [
+          20,
+          31
+        ]
+      ]
+    },
+    "disambiguation_124": {
+      "dataset": "disambiguation_124",
+      "n": 124,
+      "accuracy": 0.6774193548387096,
+      "precision": 0.7368421052631579,
+      "recall": 0.6268656716417911,
+      "f1": 0.6774193548387096,
+      "pr_auc": 0.7774304351532126,
+      "confusion_matrix": [
+        [
+          42,
+          15
+        ],
+        [
+          25,
+          42
+        ]
+      ]
+    }
+  },
+  "_input_format": "term_enriched_def"
+}
